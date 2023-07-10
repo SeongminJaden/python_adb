@@ -7,11 +7,12 @@ import time
 
 class DroneiaBot:
     def __init__(self):
-        self.template_path_green = '../pythonQA/Screenshot_20230707-035200_ .jpg'
-        self.template_path_white = '../pythonQA/Screenshot_20230707-042947_ .jpg'
-        self.work_path = '../pythonQA/Screenshot_20230707-060419_ .jpg'
-        self.benner_path = '../pythonQA/Screenshot_20230707-142628_ .jpg'
-        self.preferences_path = '../pythonQA/Screenshot_20230707-165943_ .jpg'
+        #좌표를 추출하고자 하는 아이콘, 버튼의 스크린샷
+        self.template_path_green = '
+        self.template_path_white = ''
+        self.work_path = ''
+        self.benner_path = ''
+        self.preferences_path = ''
         self.bottom_right_2 = []
 
         # ADB 클라이언트 초기화
@@ -90,7 +91,7 @@ class DroneiaBot:
         return top_left, bottom_right
 
     def run(self):
-        command = f"am start -n com.thedash.droneia/.activity.MainActivity"
+        command = f"am start -n 실행하고자 하는 앱의 activity 주소 입력"
         result = self.device.shell(command)
         time.sleep(2)
         print(f"Successfully launched")
