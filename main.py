@@ -118,22 +118,22 @@ class DroneiaBot:
         def ran1():
             command = f'input tap {center_x} {center_y}'
             result = self.device.shell(command)
-            print(f'발주: touching {center_x, center_y}')
+            print(f': touching {center_x, center_y}')
 
         def ran2():
             command = f'input tap {center_x * 3} {center_y}'
             result = self.device.shell(command)
-            print(f'수주: touching {center_x * 3, center_y}')
+            print(f': touching {center_x * 3, center_y}')
 
         def ran3():
             command = f'input tap {center_x * 5} {center_y}'
             result = self.device.shell(command)
-            print(f'구인: touching {center_x * 5, center_y}')
+            print(f': touching {center_x * 5, center_y}')
 
         def ran4():
             command = f'input tap {center_x * 7} {center_y}'
             result = self.device.shell(command)
-            print(f'마이페이지: touching {center_x * 7, center_y}')
+            print(f': touching {center_x * 7, center_y}')
 
         command = f'input tap {benner_center_x} {benner_center_y}'
         result = self.device.shell(command)
